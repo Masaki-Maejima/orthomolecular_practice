@@ -1,0 +1,20 @@
+.header-logo {
+  font-size:25px;
+  font-family: fantasy;
+  /*フォント変更時に気になったこと。医療が絡む情報で固めの雰囲気のデザインが多い。前向きな、カジュアルな雰囲気にしたく、fantasyを採用してみた。(仮)*/
+  /*background-color: #f4f442;*/
+  /*color: #ff0000;*/
+}
+li {
+  list-style: none;
+  float:left;
+}
+
+img {
+    width: 1500px;
+    height: 500px;
+}
+.footer{
+  background-color:#f4bc42;
+  padding-bottom: 80px;
+}
