@@ -14,27 +14,52 @@
 <body>
   <div class="header">
     <div class="header-logo">orthomolecular</div>
-    <div class="header-list">
-      <ul>
-        <li>ユーザー登録(仮)</li>
-        <li>Entrance</li>  <!-- ユーザーのプロフィール編集、悩みなど。リンクまだ -->
-      </ul>
+    <ul class="header-link">
+      <!-- 以下の二つはリンク先指定 -->
+      <li><a href="new.html">新しく利用する</a></li>
+      <!-- ユーザーのプロフィール編集、悩みなど。リンクまだ -->
+      <li><a href="show.html">Entrance</a></li>
+      <!-- 登録した人はエントランスドア -->
+    </ul>
+    <div class="keyvisual">
+    <img src="https://cdn.buutiful.jp/item_images/images/000/086/667/medium/f87232a1-fd36-45c5-b1f5-cf27bd30ede4.jpg?1493980650">
     </div>
   </div>
-  <div class="main">
-    <!--  ユーザー登録及びユーザー登録画面作成の必要有りとりあえずなくても可  /!-->
-    <img src="https://cdn.buutiful.jp/item_images/images/000/086/667/medium/f87232a1-fd36-45c5-b1f5-cf27bd30ede4.jpg?1493980650">
-    <!-- このイメージには食材やサプリメントの画像の挿入。画面いっぱい使う。横幅。ジャンボトロン？イメージへのCSS適用？  -->
-  <h3>分子栄養学を学んでいるかたや、栄養療法を実践しているかたを対象としているプラットフォームです。
-    食事やサプリメントのことはもちろん、
-    日々実践していることや運動、悩み事など。お話してみましょう。なにか気づきを得られるかもしれません。
-  </h3>
+
+  <div class="container">
+    <div class="contents">
+      <div class="contents-tytle">
+          <h3>オーソモレキュラーとは</h3>
+      </div>
+      <img src="https://cdn.buutiful.jp/item_images/images/000/086/667/medium/f87232a1-fd36-45c5-b1f5-cf27bd30ede4.jpg?1493980650">
+      <h5>オーソモレキュラー療法とは、「身体の中の分子（栄養素）の濃度を最適な状態に保つことで、身体の機能を向上させ、病態の改善をする治療法」のことです。ビタミンやミネラルなどの栄養素を正しく取り入れることで、病気の予防や治療を行なうもので、欧米を中心に発展してきました。
+       「現代医療における栄養の視点の欠落」を問題視するオーソモレキュラーでは、体内の栄養バランスの乱れが多くの病気や不調の原因であると考え、個々人の検査デ ータをもとに、薬やホルモンの補充ではなく、栄養となる物質の材料を食事やサプリメントで補充することを提案しています。</h5>
+      <a href="#">もっと見る</a>
+    </div>
+    <nav class="navigation">        <!-- テラテイルによる修正。divで加工のではなく、navタグで構築していた・ -->
+        <ul>
+          <li><a href="#">役立ち情報</a></li>
+          <li><a href="#">レシピ</a></li>
+          <li><a href="#">運動</a></li>
+          <li><a href="#">栄養素の解説</a></li>
+          <li><a href="#">症例</a></li>
+          <li><a href="#">実施できるクリニック</a></li>
+        </ul>
+    </nav>
   </div>
 
-  <div class="footer">
-    <div class="footer-logo">オーソモレキュラーってなに？</div>
-
+  <!-- <div class="navigation">
+    <nav>
+      <ul>
+        <li>役立ち情報</li>
+        <li>レシピ</li>
+        <li>運動</li>
+        <li>栄養素の解説</li>
+        <li>症例</li>
+        <li>実施できる病院</li>
+      </ul>
+    </nav>
   </div>
-
+--><!-- コンテナの中に記載するように変えてみる
 </body>
 </html>

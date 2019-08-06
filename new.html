@@ -1,1 +1,52 @@
-<!--  新規登録画面  プロフィール等を記載する。任意  -!>
+<!-- 新規登録画面  プロフィール等を記載する。任意 -->
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<title>プロトタイプ</title>
+<meta http-equiv="content-type" charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/index.js"></script>
+</head>
+<script>
+</script>
+
+
+<body>
+<!-- 名前、ニックネーム、イメージなど。気になっていること。登録ボタンの実装  -->
+<!-- やはり優しい雰囲気のデザイン -->
+<div class="contents-tytle">プロフィールを編集してください</div>
+
+<div class="contents-list">
+
+  <form action="/my-handling-form-page" method="post">
+  <div>
+    <label for="name">ニックネーム:</label>
+    <input type="text" id="name" name="user_name">
+  </div>
+
+  <div>
+    <label for="msg">イメージアイコン:</label><!-- イメージアイコンの取得方法？ -->
+  </div>
+
+  <div>
+    <label for="msg">気になること:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <div class="button">
+  <button type="submit">この内容で登録</button>
+  </div>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

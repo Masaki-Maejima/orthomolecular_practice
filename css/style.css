@@ -1,20 +1,84 @@
-.header-logo {
-  font-size:25px;
-  font-family: fantasy;
-  /*フォント変更時に気になったこと。医療が絡む情報で固めの雰囲気のデザインが多い。前向きな、カジュアルな雰囲気にしたく、fantasyを採用してみた。(仮)*/
-  /*background-color: #f4f442;*/
-  /*color: #ff0000;*/
-}
-li {
+ul, li {                        /** テラテイルでの修正箇所 **/
   list-style: none;
-  float:left;
+  margin: 0;
+  padding: 0;
 }
 
-img {
-    width: 1500px;
-    height: 500px;
+.header {                          /** heightが多用されているとの指摘で、heightは使わず **/
+  width: 1080px;
+  margin:10px auto;
 }
-.footer{
-  background-color:#f4bc42;
-  padding-bottom: 80px;
+.header-logo {
+  font-size: 25px;
+  font-family: fantasy;
+}
+.header-link {
+  float:right;
+  margin-bottom: 10px;
+}
+
+.header-link li {                /** ここでなぜfloat: left;するのか **/
+  float: left;
+}
+
+.header-link li a {              /** overflow: hidden;は、ボックスの範囲内に内容が収まらない場合、隠れる表示 **/
+  display: block;
+  width: 110px;
+  height: 30px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+.header-link li:first-child a {        /** first-childは擬似要素。この場合のfirstはli要素の最初の要素の意味。 **/
+  margin-right: 10px;
+}
+
+.keyvisual {                            /** heightの指定はしない。イメージのところで指定している。 **/
+  width: 1080px;
+  margin: 10px auto;
+}
+
+.keyvisual img {                        /** marginは div classのkeyvisualに適用させたため、ここでのmarginの記載は削除。 **/
+  width: 1080px;
+  height: 360px;
+}
+
+.container {                          /** keyvisualのwidthと合わせて、containerのセレクターを作成する**/
+  overflow: hidden;                   /** overflow: hidden;の追記　**/
+  width: 1080px;
+  margin: auto;
+}
+.contents {
+  float: left;
+  width: 700px;
+  padding-bottom: 10px;    /** padding-bottomの追記 **/
+  border: 1px solid #000;  /** サイドバーの位置を右に調節するため、ここでフロートレフトして周りこませた**/
+  box-sizing: border-box;  /** margin-topとmargin-leftを当てていたが、削除 **/ /** heightも削除 **//**box-sizing: border-box;の追記**/
+}
+.contents-tytle h3 {
+  text-align:  center;
+}
+.container img {
+  width: 100%;
+  height: 230px;
+}
+.contents h5 {
+  margin-left: 10px;
+}
+.contents a {
+  display: block;
+  width: 110px;
+  height: 30px;
+  border: 1px solid #000;
+  float: right;
+  margin-right: 10px;
+}
+.navigation {          /** marginを指定していたのとpaddingを指定していたのを削除。**/
+  float: right;        /** heightも削除 **/
+  width: 230px;
+}
+.navigation li {      /** box-sizing: border-box;の追記。先頭のlist-style: none;でliのstyleはキャンセルかかっている**/
+  width: 230px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }
