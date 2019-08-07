@@ -14,39 +14,25 @@
 
 
 <body>
-<!-- 名前、ニックネーム、イメージなど。気になっていること。登録ボタンの実装  -->
-<!-- やはり優しい雰囲気のデザイン -->
-<div class="contents-tytle">プロフィールを編集してください</div>
+  <p>プロフィールを編集してください</p>
+  <form action="/my-handling-form-page" method="post">    <!-- action属性 "" methodはpost -->
+    <div>
+      <label for="name">ニックネーム:</label>              <!-- labelタグ。フォームの中でフォームの項目名と構成部品を関連づけるタグ-->
+      <input type="text" id="name" name="user_name">     <!-- 上のlabel for "属性値"に関連づけられている。ここではnameである。-->
+    </div>
 
-<div class="contents-list">
+    <div>
+      <label for="msg">イメージアイコン:</label>        <!-- ##イメージアイコンの取得方法の機能追加予定## 要検索 -->
+    </div>
 
-  <form action="/my-handling-form-page" method="post">
-  <div>
-    <label for="name">ニックネーム:</label>
-    <input type="text" id="name" name="user_name">
-  </div>
+    <div>
+      <label for="msg">気になること:</label>                    <!--  cssフレームワークで装飾していく   -->
+      <textarea id="msg" name="user_message"></textarea>
+    </div>
 
-  <div>
-    <label for="msg">イメージアイコン:</label><!-- イメージアイコンの取得方法？ -->
-  </div>
-
-  <div>
-    <label for="msg">気になること:</label>
-    <textarea id="msg" name="user_message"></textarea>
-  </div>
-  <div class="button">
-  <button type="submit">この内容で登録</button>
-  </div>
+    <div class="button">
+      <button type="submit">この内容で登録</button>
+    </div>
   </form>
-</div>
-
-
-
-
-
-
-
-
-
 </body>
 </html>
