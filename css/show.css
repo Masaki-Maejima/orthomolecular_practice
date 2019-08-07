@@ -1,0 +1,30 @@
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {                         /** 新しくshow.cssを作成 **/
+  width: 1080px;
+  height: 40px;
+  margin: auto;
+  border: 1px solid #000;
+}
+/**.header img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  float:right;
+}**/
+
+
+.header li {
+  display: inline-block;         /** 最初、displayをインラインにしたら円が潰れてしまった。インラインブロックにすると解決し、横並びの円になった。**/
+  border-radius: 50%;            /** li要素はブロック要素。なので縦に当初は並ぶ。 **/
+  border: 1px solid #000;
+  width: 30px;
+  height: 30px;
+  margin-top: 4px;
+  margin-right: 10px;
+  float: right;
+}
