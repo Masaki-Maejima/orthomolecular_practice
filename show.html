@@ -25,24 +25,48 @@
       <ul>
         <li></li>
         <li></li>
-        <li></li>        
+        <li></li>
       </ul>
     </div>
     <div class="container">
       <div class="contents">
-        <!-- 検索バーを作成30px 10px -->
+        <div class= "searchbar">
+          <form id="form-talk-search" action="#">
+             <input id="input-talk-search" type="search" placeholder="トーク、メッセージを検索。"><!-- idの命名が理解できず。ここではindexでは関連づけとして揃えたが、ここではcssを適用させるのに困ると思い、それぞれに命名。-->
+             <!-- inputとformに関してはキータ参照してみる。まずは図面の通り作成。ボタン作るかも。なお、input間での改行はコメントアウト必須とのこと。 -->
+          </form>
+        </div>
+
+        <div class="contents-talkroom-scroll"><!-- ここに吹き出しやアイコン -->
+
+          <div class="talk-left">
+            <p>コメントを入力 コメントを入力 コメントを入力 コメントを入力</p>
+          </div><!-- 相手の吹き出し -->
+          <div class="faceicon">
+            <img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimg2.blogs.yahoo.co.jp%2Fybi%2F1%2F62%2Feb%2Fmomonakai%2Ffolder%2F628279%2Fimg_628279_20367965_0&twidth=1200&theight=1200&qlt=80&res_format=jpg&op=r">
+          </div>
+        </div>
+
+
         <!-- 左上から40,40でユーザーアイコンとユーザー名。吹き出しコメント欄をレスポンシブで作成 -->
         <!-- ラインで区切ってコメント入力画面作成 -->
         <!-- チェックボックスの作成 -->
         <!-- 送信ボタンの作成 -->
       </div>
-      <nav class="navigation">
-      <!-- 黒い３点のボタン。投稿したユーザーのアイコンと名前、コメントした時刻。ボックス二個。 -->
+      <nav class="navigation">      <!-- 黒い３点のボタン。投稿したユーザーのアイコンと名前、コメントした時刻。ボックス二個。 -->
+        <ul>
+          <li><!-- ３点のアイコン、マテリアル？ --></li>
+          <!-- ユーザーネームを入れるとボックスの大きさが変わってしまう -->
+          <!-- 時刻の反映はjavascript? -->
+          <li><img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div class="navbox-1"></div>
+        <div class="navbox-2"></div>
       </nav>
-
     </div>
-
-
-
-  </body>
-  </html>
+ </body>
+</html>

@@ -4,6 +4,7 @@ ul, li {
   padding: 0;
 }
 
+
 .header {                         /** 新しくshow.cssを作成 **/
   width: 1080px;
   height: 40px;
@@ -17,7 +18,6 @@ ul, li {
   float:right;
 }**/
 
-
 .header li {
   display: inline-block;         /** 最初、displayをインラインにしたら円が潰れてしまった。インラインブロックにすると解決し、横並びの円になった。**/
   border-radius: 50%;            /** li要素はブロック要素。なので縦に当初は並ぶ。 **/
@@ -27,4 +27,128 @@ ul, li {
   margin-top: 4px;
   margin-right: 10px;
   float: right;
+}
+/**ここからコンテナ**/
+.container {
+  overflow: hidden;
+  width: 1080px;
+  margin: auto;
+}
+/**ここからコンテンツ**/
+.contents {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 800px;
+  height: 614px;
+  margin-top: 30px;
+  float: left;
+}
+/**ここからサーチバー**/
+.searchbar {                       /**ボックスの線が重なる**/
+  border: 1px solid #000;
+  box-sizing: border-box;
+  height: 50px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+/**#input-talk-search {
+  margin: auto;
+  height: 30px;
+  width: 770px;
+}**/
+/**inputへのスタイルのあてかたは要学習**/
+input[type='search']{        /**こっちに書き換えた。input要素はもともスタイルが決まっているのでそれをリセットしないとうまくスタイルが適用されない**/
+  -webkit-appearance: textfield;  /**外観を決めるプロパティで searchfieldというデフォルト値が設定されているので、textfield値で上書き。これで基本的なプロパティは制御が可能**/
+  -webkit-box-sizing: content-box;/**プロパティが border-box になっているので、text タイプと同じ content-box にしておきます。**/
+  margin: 7px 10px;
+  height: 30px;
+  width: 770px;
+}
+/**ここまでサーチバー**/
+/**ここからcontents-talkroom-scroll**/
+.talk-left {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 80px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #FFF;
+  border: solid 1px #555;
+  box-sizing: border-box;
+  border-radius: 15px
+}
+.talk-left:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-right: 12px solid #FFF;
+  z-index: 2;
+}
+.talk-left:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-right: 14px solid #555;
+  z-index: 1;
+}
+.talk-left p {
+  margin: 0;
+  padding: 0;
+}
+.faceicon {
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: -90px;
+  width: 40px;
+}
+.faceicon img {
+  width: 100%;
+  height: auto;
+  border: solid 1px #d7ebfe;
+  border-radius: 50%;
+}
+
+/**ここからnav**/
+.navigation {
+  width: 230px;
+  float: right;
+  margin-top: 30px;
+}
+.navigation li {
+  width: 230px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.navigation li img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  float:left;
+}
+.navbox-1 {
+  margin-top: 30px;
+  width: 230px;
+  padding: 75px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.navbox-2 {
+  margin-top: 30px;
+  width: 230px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
 }

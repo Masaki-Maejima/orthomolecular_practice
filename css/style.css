@@ -43,7 +43,7 @@ ul, li {                        /** テラテイルでの修正箇所 **/
 }
 
 .container {                          /** keyvisualのwidthと合わせて、containerのセレクターを作成する**/
-  overflow: hidden;                   /** overflow: hidden;の追記　**/
+  overflow: hidden;                   /** overflow: hidden;の追記 **/
   width: 1080px;
   margin: auto;
 }
