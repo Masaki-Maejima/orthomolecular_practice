@@ -39,7 +39,7 @@ ul, li {
   border: 1px solid #000;
   box-sizing: border-box;
   width: 800px;
-  height: 614px;
+  /**height: 614px;**/
   margin-top: 30px;
   float: left;
 }
@@ -66,59 +66,126 @@ input[type='search']{        /**こっちに書き換えた。input要素はも�
   width: 770px;
 }
 /**ここまでサーチバー**/
+
 /**ここからcontents-talkroom-scroll**/
-.talk-left {
-  position: relative;
-  display: inline-block;
-  margin: 1.5em 0 1.5em 80px;
-  padding: 7px 10px;
-  min-width: 120px;
+/*以下、①背景色など*/
+.line-bc {
+  padding: 20px 10px;
+
   max-width: 100%;
-  color: #555;
-  font-size: 16px;
-  background: #FFF;
-  border: solid 1px #555;
-  box-sizing: border-box;
-  border-radius: 15px
+  margin: auto;
+  text-align: right;
+  font-size: 14px;
+  background: #7da4cd;
 }
-.talk-left:before {
+
+/*以下、②左側のコメント*/
+.balloon6 {
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+}
+
+.balloon6 .faceicon {
+  float: left;
+  margin-right: -50px;
+  width: 40px;
+}
+
+.balloon6 .faceicon img{
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+.balloon6 .chatting {
+  width: 100%;
+  text-align: left;
+}
+.says {
+  display: inline-block;
+  position: relative;
+  margin: 0 0 0 50px;
+  padding: 10px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #edf1ee;
+}
+
+.says:after {
   content: "";
+  display: inline-block;
   position: absolute;
-  top: 50%;
-  left: -24px;
-  margin-top: -12px;
-  border: 12px solid transparent;
-  border-right: 12px solid #FFF;
-  z-index: 2;
+  top: 3px;
+  left: -19px;
+  border: 8px solid transparent;
+  border-right: 18px solid #edf1ee;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
 }
-.talk-left:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -30px;
-  margin-top: -14px;
-  border: 14px solid transparent;
-  border-right: 14px solid #555;
-  z-index: 1;
-}
-.talk-left p {
+.says p {
   margin: 0;
   padding: 0;
 }
-.faceicon {
-  float: left;
-  margin-top: 15px;
-  margin-left: 15px;
-  margin-right: -90px;
-  width: 40px;
+
+/*以下、③右側の緑コメント*/
+.mycomment {
+  margin: 10px 0;
 }
-.faceicon img {
-  width: 100%;
-  height: auto;
-  border: solid 1px #d7ebfe;
-  border-radius: 50%;
+.mycomment p {
+  display: inline-block;
+  position: relative;
+  margin: 0 10px 0 0;
+  padding: 8px;
+  max-width: 250px;
+  border-radius: 12px;
+  background: #30e852;
+  font-size: 15px:
 }
 
+.mycomment p:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: -19px;
+  border: 8px solid transparent;
+  border-left: 18px solid #30e852;
+  -webkit-transform: rotate(-35deg);
+  transform: rotate(-35deg);
+}
+/** ここからテキスト入力画面 user-message**/
+.user-message {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 100%;
+  height: 340px;
+  margin: auto;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+textarea {
+  width: 764px;
+  height: 132px;
+  margin-top: 30px;
+}
+input[type='submit'] {
+  margin-top: 20px;
+  width: 200px;
+  height: 38px;
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+.checks {
+  float:left;
+  margin-left: 30px;
+  margin-top: -45px;
+  width: 60px;
+
+}
+input[type='checkbox'] {
+  float: left;
+
+}
 /**ここからnav**/
 .navigation {
   width: 230px;
@@ -137,7 +204,9 @@ input[type='search']{        /**こっちに書き換えた。input要素はも�
   width: 40px;
   height: 40px;
   float:left;
+  
 }
+
 .navbox-1 {
   margin-top: 30px;
   width: 230px;

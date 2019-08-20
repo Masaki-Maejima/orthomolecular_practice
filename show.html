@@ -37,30 +37,66 @@
           </form>
         </div>
 
-        <div class="contents-talkroom-scroll"><!-- ここに吹き出しやアイコン -->
+        <div class="line-bc"><!--①LINE会話全体を囲う--><!-- ユーザー名を入れていない。可変式じゃない。 -->
+          <!--②左コメント始-->
+          <div class="balloon6">
+            <div class="faceicon">
+              <img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r">
+            </div>
+            <div class="chatting">
+              <div class="says">
+                <p>コメントを入力 コメントを入力 コメントを入力 コメントを入力コメントを入力 コメントを入力コメントを入力 コメントを入力コメントを入力 コメントを入力コメントを入力 コメントを入力</p>
+              </div>
+            </div>
+          </div>
 
-          <div class="talk-left">
-            <p>コメントを入力 コメントを入力 コメントを入力 コメントを入力</p>
-          </div><!-- 相手の吹き出し -->
-          <div class="faceicon">
-            <img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimg2.blogs.yahoo.co.jp%2Fybi%2F1%2F62%2Feb%2Fmomonakai%2Ffolder%2F628279%2Fimg_628279_20367965_0&twidth=1200&theight=1200&qlt=80&res_format=jpg&op=r">
+          <div class="balloon6">
+            <div class="faceicon">
+              <img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r">
+            </div>
+            <div class="chatting">
+              <div class="says">
+                <p>コメントを入力 コメントを入力 コメントを入力 コ コメントを入力コメントを入力 コメントを入力コメントを入力 コメントを入力</p>
+              </div>
+            </div>
+          </div>
+          <!--②/左コメント終-->
+
+          <!--③右コメント始-->
+          <div class="mycomment">
+            <p>コメントを入力 コメントを入力 コメントを入力 コメントを入力 コメントを入</p>
+          </div>
+          <!--/③右コメント終-->
+        </div><!--/①LINE会話終了-->
+        <div class="user-message"><!-- ラインで区切ってコメント入力画面作成 --><!-- チェックボックスの作成 --><!-- 送信ボタンの作成 -->
+          <textarea rows="10" cols="60"></textarea>
+          <form class="" action="#" method="post">
+            <input type="submit" value="送信">
+          </form>
+
+
+          <div class="checks">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
           </div>
         </div>
 
-
-        <!-- 左上から40,40でユーザーアイコンとユーザー名。吹き出しコメント欄をレスポンシブで作成 -->
-        <!-- ラインで区切ってコメント入力画面作成 -->
-        <!-- チェックボックスの作成 -->
-        <!-- 送信ボタンの作成 -->
       </div>
       <nav class="navigation">      <!-- 黒い３点のボタン。投稿したユーザーのアイコンと名前、コメントした時刻。ボックス二個。 -->
         <ul>
           <li><!-- ３点のアイコン、マテリアル？ --></li>
           <!-- ユーザーネームを入れるとボックスの大きさが変わってしまう -->
           <!-- 時刻の反映はjavascript? -->
-          <li><img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r"></li>
-          <li></li>
-          <li></li>
+          <li><img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r">まる子</li>
+          <li><img src="http://gogo-gomachan.com/image/chara_01_2.png"></li>
+          <li><img src="http://quiizu.com/wp-content/uploads/2016/11/migSP38JUT3.jpg"></li>
           <li></li>
           <li></li>
         </ul>
