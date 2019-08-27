@@ -92,11 +92,24 @@
       <nav class="navigation">      <!-- 黒い３点のボタン。投稿したユーザーのアイコンと名前、コメントした時刻。ボックス二個。 -->
         <ul>
           <li><!-- ３点のアイコン、マテリアル？ --></li>
-          <!-- ユーザーネームを入れるとボックスの大きさが変わってしまう -->
-          <!-- 時刻の反映はjavascript? -->
-          <li><img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r">まる子</li>
-          <li><img src="http://gogo-gomachan.com/image/chara_01_2.png"></li>
-          <li><img src="http://quiizu.com/wp-content/uploads/2016/11/migSP38JUT3.jpg"></li>
+
+
+          <!--  テラテイルより。liのクラスにuserを追記。親要素とする。ここにrelativeとする  -->
+          <li class="user"><img src="https://rr.img.naver.jp/mig?src=http%3A%2F%2Fimgcc.naver.jp%2Fkaze%2Fmission%2FUSER%2F20130915%2F32%2F3053482%2F108%2F360x360x69dfb1f60912928a6b726890.jpg%2F300%2F600&twidth=300&theight=600&qlt=80&res_format=jpg&op=r">
+             <span class= "name">まる子</span>
+             <span class= "time">たった今</span><!-- 親要素liに対して、absolute.  -->
+          </li>
+
+          <li class= "user"><img src="http://gogo-gomachan.com/image/chara_01_2.png">
+              <span class= "name">アシベ</span>
+              <span class= "time">17:20</span>
+          </li>
+
+          <li class= "user"><img src="http://quiizu.com/wp-content/uploads/2016/11/migSP38JUT3.jpg">
+              <span class= "name">草壁</span>
+              <span class= "time">15:12</span>
+          </li>
+
           <li></li>
           <li></li>
         </ul>
